@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Shoes Store</title>
+    <style>
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .shoes {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .shoes h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .shoes p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .shoes button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: #6a11cb;
+            background: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .shoes button:hover {
+            background: #e6e6e6;
+        }
+
+        .products {
+            padding: 50px 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .product-card span {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .product-card button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="shoes">
+        <div>
+            <h1>Explore Our Basketball Shoes</h1>
+            <p>Find the perfect pair of basketball shoes to elevate your game. Shop top brands now!</p>
+            <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'});">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Basketball Shoes</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="LBJ12.png" alt="Basketball Shoes">
+                <h3>LeBron XXII 'Currency' EP</h3>
+                <p>High-performance basketball shoes for unmatched agility and comfort.</p>
+                <span>₱10,895</span>
+                <button onclick="addToCart('LeBron XXII Currency EP', 10895)">Add to Cart</button>
+            </div>
+
+          
+            <div class="product-card">
+                <img src="JORDANLUKA3.png" alt="Basketball Shoes">
+                <h3>Luka 3 PF</h3>
+                <p>Durable and lightweight shoes for pro-level performance on the court.</p>
+                <span>₱7,395</span>
+                <button onclick="addToCart('Luka 3 PF', 7395)">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+                <img src="JORDANTATUM3.png" alt="Basketball Shoes">
+                <h3>Tatum 3 PF 'Zen'</h3>
+                <p>Stylish, comfortable, and made for ultimate performance.</p>
+                <span>₱7,095</span>
+                <button onclick="addToCart('Tatum 3 PF Zen', 7095)">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+                <img src="LEBRONXXII.png" alt="Basketball Shoes">
+                <h3>LeBron XXII 'Token' EP</h3>
+                <p>Top-notch basketball shoes designed for style and support.</p>
+                <span>₱10,895</span>
+                <button onclick="addToCart('LeBron XXII Token EP', 10895)">Add to Cart</button>
+            </div>
+
+          
+            <div class="product-card">
+                <img src="GTHUSTLE3.png" alt="Basketball Shoes">
+                <h3>Nike G.T. Hustle 3 'Paige Bueckers' EP</h3>
+                <p>Perfect balance of durability and lightweight comfort.</p>
+                <span>₱10,295</span>
+                <button onclick="addToCart('Nike G.T. Hustle 3 Paige Bueckers EP', 10295)">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+                <img src="KD17.png" alt="Basketball Shoes">
+                <h3>KD17 'Aunt Pearl' EP</h3>
+                <p>Precision-engineered shoes for top-tier basketball performance.</p>
+                <span>₱8,895</span>
+                <button onclick="addToCart('KD17 Aunt Pearl EP', 8895)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
